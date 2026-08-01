@@ -576,6 +576,173 @@ small {
   }
 }
 
+/* ============================================================
+   THEME TOGGLE BUTTON (menu item)
+   ============================================================ */
+
+.theme-toggle-li {
+  margin-top: 6px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+a.theme-toggle {
+  cursor: pointer;
+}
+
+a.theme-toggle .fa {
+  font-size: 20px;
+}
+
+/* Show a moon in light mode (click -> dark), a sun in dark mode (click -> light) */
+a.theme-toggle .fa-sun-o {
+  display: none;
+}
+
+a.theme-toggle .fa-moon-o {
+  display: inline-block;
+}
+
+html[data-theme="dark"] a.theme-toggle .fa-sun-o {
+  display: inline-block;
+}
+
+html[data-theme="dark"] a.theme-toggle .fa-moon-o {
+  display: none;
+}
+
+/* ============================================================
+   DARK THEME
+   ============================================================ */
+
+/* Smooth transition between themes */
+body,
+main,
+nav,
+.card,
+.card-reveal,
+ul.side-nav,
+ul.side-nav.fixed li.logo,
+blockquote {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+html[data-theme="dark"] body {
+  color: #e6e6e6;
+  background: #0e1116;
+}
+
+html[data-theme="dark"] main {
+  background: #0e1116;
+}
+
+/* Sidebar / navigation */
+html[data-theme="dark"] nav {
+  background: #12161c;
+}
+
+html[data-theme="dark"] ul.side-nav,
+html[data-theme="dark"] ul.side-nav.fixed {
+  background-color: #12161c;
+}
+
+html[data-theme="dark"] ul.side-nav.fixed li.logo {
+  background-color: #12161c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .theme-toggle-li {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] ul.table-of-contents li:not(.logo) a.active,
+html[data-theme="dark"] ul.table-of-contents li:not(.logo) a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Sidebar link labels */
+html[data-theme="dark"] ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+html[data-theme="dark"] ul#slide-out li:not(.logo) a span {
+  color: #cfd8dc !important;
+}
+
+/* Intro hero */
+html[data-theme="dark"] #intro.section {
+  background: linear-gradient(135deg, #0e1116 0%, #103b36 100%);
+}
+
+/* Cards */
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .card .card-reveal {
+  background-color: #171b21;
+  color: #e6e6e6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .card p,
+html[data-theme="dark"] .card li,
+html[data-theme="dark"] .card .card-content {
+  color: #e6e6e6;
+}
+
+html[data-theme="dark"] .card li a {
+  color: #e6e6e6;
+}
+
+html[data-theme="dark"] .card ul li li {
+  color: #9aa4ae;
+}
+
+html[data-theme="dark"] .card-action span {
+  color: #9aa4ae;
+}
+
+html[data-theme="dark"] #experience .card-action {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Dividers */
+html[data-theme="dark"] #skills h4,
+html[data-theme="dark"] #experience .card-content .row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Text colours */
+html[data-theme="dark"] a {
+  color: #4db6ac;
+}
+
+html[data-theme="dark"] .teal-text {
+  color: #4db6ac !important;
+}
+
+html[data-theme="dark"] .brown-text {
+  color: #bcaaa4 !important;
+}
+
+html[data-theme="dark"] .grey-text {
+  color: #9aa4ae !important;
+}
+
+html[data-theme="dark"] blockquote {
+  color: #c8b8b0;
+  border-left-color: #4db6ac;
+}
+
+html[data-theme="dark"] a.hoverline:hover {
+  border-bottom: 3px solid #4db6ac !important;
+}
+
+/* GitHub icon (black) needs to be visible on dark background */
+html[data-theme="dark"] .icon-btn.github {
+  color: #e6e6e6;
+}
+
+/* Mobile top bar name/tagline (uses hardcoded black-text/blue-grey-text) */
+html[data-theme="dark"] .name-title a,
+html[data-theme="dark"] .name-title span {
+  color: #cfd8dc !important;
+}
+
 @media (max-width: 600px) {
   h2 {
     font-size: 22px;

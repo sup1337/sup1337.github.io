@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- Theme: apply saved (or default dark) theme before paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
   <!-- bootstrap css js -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -18,13 +26,13 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Varad Bhogayata | Python Developer</title>
+  <title>Laszlo Hunor's Website`</title>
   <!-- Open Graph-->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Varad Bhogayata | Python Developer" />
   <meta property="og:description" content="My Tagline....." />
-  <meta property="og:url" content="varadbhogayata.github.io" />
+  <meta property="og:url" content="sup1337.github.io" />
   <meta property="og:site_name" content="Varad Bhogayata | Python Developer" />
   <meta property="article:publisher" content="varadbhogayata.github.io" />
   <meta property="og:image" content="" />
@@ -72,9 +80,9 @@
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-          <img src="/assets/img/my-passport-photo.jpg" class="circle img-responsive" alt="avatar" width="130px"
-            height="130px" style="display:block; margin: -25px; margin-left:-5.5px; margin-right: auto; 
-      max-width: 10rem; max-height: 10rem; border: 0.18rem hidden #00796b; border-radius: 50%;">
+          <img src="/assets/img/avatar.jpg" class="circle img-responsive" alt="avatar" width="130px"
+            height="130px" style="display:block; margin: -25px; margin-left:-5.5px; margin-right: auto;
+      max-width: 10rem; max-height: 10rem; border: 0.18rem hidden #00796b; border-radius: 50%; object-fit: cover;">
         </a>
       </li>
       <!-- <img src="/assets/img/my-passport-photo.jpg" alt="Avatar"> -->
@@ -176,6 +184,11 @@
           href="https://drive.google.com/file/d/1JK0WiDYe5uMZCtUqLfULc7L28Wrndo6n/view?usp=sharing" target="_blank"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
+      <li class="bold theme-toggle-li">
+        <a href="#" role="button" aria-label="Toggle dark and light mode"
+          class="theme-toggle waves-effect waves-dark teal-text"><i class="fa fa-moon-o small"></i><i
+            class="fa fa-sun-o small"></i><span class="theme-toggle-label">Dark Mode</span></a>
+      </li>
     </ul>
   </nav>
 
@@ -184,8 +197,8 @@
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="blue-grey-text">Varad
-        Bhogayata</a><span class="black-text light">Python Developer</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="blue-grey-text">Hunor László
+      </a><span class="black-text light">Web Developer</span>
     </div>
   </nav>
 
@@ -238,6 +251,11 @@
           href="https://drive.google.com/file/d/1JK0WiDYe5uMZCtUqLfULc7L28Wrndo6n/view?usp=sharing" target="_blank"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
+      <li class="bold theme-toggle-li">
+        <a href="#" role="button" aria-label="Toggle dark and light mode"
+          class="theme-toggle waves-effect waves-dark teal-text"><i class="fa fa-moon-o small"></i><i
+            class="fa fa-sun-o small"></i><span class="theme-toggle-label">Dark Mode</span></a>
+      </li>
     </ul>
   </nav>
 
@@ -268,11 +286,11 @@
         <div class="col-md-9">
           <div class="content section-padding valign" style="margin-left: 20px;">
             <div class="caption">
-              <h2>Hi, I'm <span class="teal">Varad Bhogayata.</span></h2>
+              <h2>Hi, I'm <span class="teal">Hunor László.</span></h2>
               <h5><span style="color: #1ab394 !important;">A</span>
-                <span>python lover, web developer with bent on AI.</span>
+                <span>Web developer on building modern, high-performance websites.</span>
               </h5>
-              <p>Small description...</p>
+              <p>Self-driven, intuitive programmer who enjoys solving complex real-world problems.</p>
               
               <!-- <div class="social-panel-container" style="position: fixed;
               right: 0;
@@ -329,9 +347,9 @@
               <button class="icon-btn github"> 
                 <i class="fa fa-github"></i>
               </button>
-              <button class="icon-btn angellist"> 
-                <i class="fa fa-angellist"></i>
-              </button>
+<!--              <button class="icon-btn angellist"> -->
+<!--                <i class="fa fa-angellist"></i>-->
+<!--              </button>-->
             </div>
             <div class='buttons'>
               <a href="#about" style="position: relative; padding: 11px 35px; background: none; color: #fff; 
@@ -361,14 +379,53 @@
       <div class="container flow-text">
         <blockquote>
           <h2>
-            Mission-driven python developer with a passion for Artificial Intelligence and Web Development.
+            Mission-driven  developer with a passion for Artificial Intelligence and Web Development.
           </h2>
         </blockquote>
         <p>
           About Me.
         </p>
         <p>
-          Another Paragraph
+          I am a Computer Science graduate from Sapientia Hungarian University of
+          Transylvania. I enjoy problem-solving and building modern, functional
+          websites with intuitive and logical solutions.
+        </p>
+
+        <p>
+          During my studies and personal projects, I worked with frontend and backend
+          web technologies, databases, development tools, and cloud platforms.
+        </p>
+
+        <p>
+          I have built and launched my own fully functional website, which gave me
+          practical experience in web development, deployment, and SEO. I enjoy
+          learning new technologies and improving my skills through real projects.
+        </p>
+
+        <p>
+          <strong>Programming Languages:</strong>
+          JavaScript, C++ , HTML, CSS, Python, C#, SQL
+          <br>
+
+          <strong>Web Technologies:</strong>
+          HTML5, CSS, Tailwind CSS
+          <br>
+
+          <strong>Databases:</strong>
+          MySQL, PostgreSQL, Microsoft SQL Server
+          <br>
+
+          <strong>Frameworks &amp; Platforms:</strong>
+          Next.js, Node.js, .NET, Microsoft Azure
+          <br>
+
+          <strong>Tools &amp; Practices:</strong>
+          Git, Docker, CI/CD, SEO
+        </p>
+
+        <p>
+          I am looking for opportunities where I can develop my web development skills,
+          contribute to real projects, and continue growing professionally.
         </p>
         <!-- <p>
         <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
@@ -1206,6 +1263,36 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+
+  <!-- Dark / Light theme toggle -->
+  <script>
+    (function () {
+      var root = document.documentElement
+
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme)
+        localStorage.setItem("theme", theme)
+        // In dark mode the button offers a switch to light, and vice versa
+        var label = theme === "dark" ? "Light Mode" : "Dark Mode"
+        var labels = document.querySelectorAll(".theme-toggle-label")
+        for (var i = 0; i < labels.length; i++) {
+          labels[i].textContent = label
+        }
+      }
+
+      // Sync labels with the theme applied before paint (default: dark)
+      applyTheme(root.getAttribute("data-theme") || "dark")
+
+      var buttons = document.querySelectorAll(".theme-toggle")
+      for (var j = 0; j < buttons.length; j++) {
+        buttons[j].addEventListener("click", function (e) {
+          e.preventDefault()
+          var current = root.getAttribute("data-theme")
+          applyTheme(current === "dark" ? "light" : "dark")
+        })
+      }
+    })()
   </script>
 
   <!-- nothing to see here...-->
