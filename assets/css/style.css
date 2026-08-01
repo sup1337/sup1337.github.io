@@ -350,6 +350,25 @@ h3 {
   max-height: 60px;
 }
 
+.project-tag {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #8a8a8a;
+  margin: -6px 0 16px;
+}
+
+.project-tag em {
+  font-style: italic;
+}
+
+.project-tag-name {
+  font-family: monospace;
+  color: #008073;
+  background: rgba(0, 128, 115, 0.08);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
 .card-action span {
   font-size: 85%;
   color: #666;
@@ -399,23 +418,10 @@ a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
 }
 
-#skills .card.large {
-  height: 360px;
-}
-
-#skills h4 {
+#education h4 {
   border-bottom: 1px solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 20px;
-}
-
-#skills .col img.responsive-img {
-  margin: 0 auto;
-  max-height: 100px;
-  padding-bottom: 10px;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
 }
 
 .card.large .card-content p {
@@ -701,7 +707,7 @@ html[data-theme="dark"] #experience .card-action {
 }
 
 /* Dividers */
-html[data-theme="dark"] #skills h4,
+html[data-theme="dark"] #education h4,
 html[data-theme="dark"] #experience .card-content .row {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -741,6 +747,15 @@ html[data-theme="dark"] .icon-btn.github {
 html[data-theme="dark"] .name-title a,
 html[data-theme="dark"] .name-title span {
   color: #cfd8dc !important;
+}
+
+html[data-theme="dark"] .project-tag {
+  color: #9aa4ae;
+}
+
+html[data-theme="dark"] .project-tag-name {
+  color: #4db6ac;
+  background: rgba(77, 182, 172, 0.12);
 }
 
 @media (max-width: 600px) {
