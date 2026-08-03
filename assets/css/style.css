@@ -783,8 +783,7 @@ html[data-theme="dark"] .project-tag-name {
     margin: 0;
   }
   i.mdi-navigation-close.right {
-    position: relative;
-    bottom: 35px;
+    vertical-align: middle;
   }
   #contact a:not(.btn-floating) {
     text-align: center;
